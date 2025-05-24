@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieAIs.com - Discover & Promote Independent AI Tools</title>
+    <meta name="description" content="Discover unique, niche, and cutting-edge independent AI tools. A curated repository for AI creators to list and promote their innovations. Get early access.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Darker text */
+        }
+        /* Custom styles for subtle shadows and rounded corners */
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+        .btn-primary {
+            background-color: #ff9f1c; /* Orange from logo */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600; /* Semi-bold */
+        }
+        .btn-primary:hover {
+            background-color: #e68a00; /* Darker orange */
+            transform: translateY(-2px);
+        }
+        .input-field {
+            border: 1px solid #cbd5e1; /* Slate-300 */
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #ff9f1c; /* Orange focus */
+            box-shadow: 0 0 0 2px rgba(255, 159, 28, 0.2); /* Subtle orange glow */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white py-4 shadow-sm">
+        <div class="container mx-auto px-4 flex justify-center items-center">
+            <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-gray-800">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#ff9f1c"/>
+                    <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Inter, sans-serif" font-weight="700" font-size="16">IA</text>
+                </svg>
+                <span>IndieAIs.com</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-orange-50 to-amber-100 text-gray-800 py-20 md:py-32 text-center relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10 max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                Discover the Next Wave of Independent AI Tools.
+            </h1>
+            <p class="text-lg md:text-xl mb-10 opacity-90">
+                Your curated repository for cutting-edge indie AI innovations. Be the first to know.
+            </p>
+
+            <form id="email-signup-form" action="https://formspree.io/f/mqaqveag" method="POST" class="bg-white p-6 md:p-8 rounded-xl card inline-block max-w-lg w-full">
+                <p class="text-lg font-medium mb-4 text-gray-700">Get Early Access & Updates</p>
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <input type="email" name="_replyto" placeholder="Your email address" required class="input-field flex-grow">
+                    <button type="submit" class="btn-primary w-full sm:w-auto">
+                        Get Early Access
+                    </button>
+                </div>
+                <p id="form-success-message" class="text-green-600 font-medium mt-4 hidden">Thanks for signing up! We'll keep you updated.</p>
+            </form>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-gray-800">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-orange-100 rounded-full p-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">1. Discover</h3>
+                    <p class="text-gray-600">Explore a curated list of independent AI tools.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-orange-100 rounded-full p-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.286L13 21l-2.286-6.857L5 12l5.714-2.286L13 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">2. Promote</h3>
+                    <p class="text-gray-600">Creators can list and promote their unique AI innovations.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-orange-100 rounded-full p-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">3. Connect</h3>
+                    <p class="text-gray-600">Join a community passionate about indie AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-blue-50">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">What You'll Find</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                IndieAIs.com will feature a dynamic range of tools, including:
+            </p>
+            <ul class="list-disc list-inside text-left text-gray-700 text-lg mx-auto max-w-sm">
+                <li class="mb-2">✨ Promoted Tools (spotlight innovations)</li>
+                <li class="mb-2">🚀 Featured Tools (curated highlights)</li>
+                <li class="mb-2">🆕 New Tools (latest additions)</li>
+                <li class="mb-2">🗓️ Upcoming Tools (sneak peeks)</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <div class="mb-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-3 transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-3 transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-3 transition-colors">Contact</a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 IndieAIs.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle form submission success message
+        document.getElementById('email-signup-form').addEventListener('submit', function(event) {
+            // Prevent default form submission to handle success message
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json' // Important for Formspree to return JSON
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById('form-success-message').classList.remove('hidden');
+                    // Optionally, clear the form field
+                    form.reset();
+                } else {
+                    // Handle errors (e.g., show an error message)
+                    console.error('Form submission failed:', response.statusText);
+                    // You might want to display a user-friendly error message here
+                }
+            })
+            .catch(error => {
+                console.error('Network error:', error);
+                // Display a network error message
+            });
+        });
+    </script>
+</body>
+</html>
